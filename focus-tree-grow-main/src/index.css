@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 140 30% 97%;
+    --foreground: 140 20% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 140 20% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 20% 10%;
+    --primary: 142 71% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 140 20% 90%;
+    --secondary-foreground: 140 20% 10%;
+    --muted: 140 20% 95%;
+    --muted-foreground: 140 10% 40%;
+    --accent: 88 50% 53%;
+    --accent-foreground: 140 20% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 140 20% 85%;
+    --input: 140 20% 85%;
+    --ring: 142 71% 45%;
+    --radius: 0.5rem;
+    --chart-1: 142 71% 45%;
+    --chart-2: 88 50% 53%;
+    --chart-3: 35 91% 65%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    
+    /* Nature theme colors */
+    --earth: 30 40% 50%;
+    --trunk: 25 50% 35%;
+    --leaf: 142 71% 45%;
+    --seed: 30 50% 40%;
+    --sky: 200 80% 90%;
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-tree: 0 8px 30px rgba(74, 175, 99, 0.3);
+  }
+
+  .dark {
+    --background: 45 20% 96%;
+    --foreground: 30 15% 25%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 30 15% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 15% 25%;
+
+    --primary: 145 65% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 35 40% 85%;
+    --secondary-foreground: 30 15% 25%;
+
+    --muted: 45 20% 90%;
+    --muted-foreground: 30 10% 50%;
+
+    --accent: 120 50% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 45 15% 85%;
+    --input: 45 15% 85%;
+    --ring: 145 65% 45%;
+
+    --radius: 1rem;
+
+    /* Nature-themed custom tokens */
+    --earth: 30 35% 60%;
+    --leaf: 120 45% 50%;
+    --seed: 35 50% 45%;
+    --trunk: 25 40% 35%;
+    --sky: 200 40% 95%;
+    
+    /* Gradients */
+    --gradient-earth: linear-gradient(135deg, hsl(35 40% 85%), hsl(45 30% 90%));
+    --gradient-growth: linear-gradient(180deg, hsl(120 50% 60%), hsl(145 65% 45%));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(145 65% 45% / 0.15);
+    --shadow-tree: 0 8px 30px -8px hsl(145 65% 45% / 0.25);
+  }
+
+  .dark {
+    --background: 30 20% 12%;
+    --foreground: 45 20% 90%;
+
+    --card: 30 18% 16%;
+    --card-foreground: 45 20% 90%;
+
+    --popover: 30 18% 16%;
+    --popover-foreground: 45 20% 90%;
+
+    --primary: 145 60% 55%;
+    --primary-foreground: 30 20% 12%;
+
+    --secondary: 30 15% 22%;
+    --secondary-foreground: 45 20% 90%;
+
+    --muted: 30 15% 20%;
+    --muted-foreground: 45 15% 60%;
+
+    --accent: 120 45% 50%;
+    --accent-foreground: 30 20% 12%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 45 20% 90%;
+
+    --border: 30 15% 22%;
+    --input: 30 15% 22%;
+    --ring: 145 60% 55%;
+
+    --earth: 30 30% 40%;
+    --leaf: 120 40% 45%;
+    --seed: 35 45% 40%;
+    --trunk: 25 35% 25%;
+    --sky: 200 20% 18%;
+    
+    --gradient-earth: linear-gradient(135deg, hsl(30 15% 22%), hsl(30 18% 16%));
+    --gradient-growth: linear-gradient(180deg, hsl(120 45% 50%), hsl(145 60% 55%));
+    
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-tree: 0 8px 30px -8px hsl(0 0% 0% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
