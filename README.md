@@ -2,6 +2,9 @@
 
 A beautiful focus timer application that helps you stay productive by growing a virtual tree with each focus session.
 
+## 🔴 Live Demo
+**👉 [Click here to try the App]([https://huggingface.co/spaces/JawadHaddad/JordanAntiquities](https://focus-treegrow.vercel.app/))**
+
 ## Features
 
 - 🌱 Pomodoro timer with customizable durations
